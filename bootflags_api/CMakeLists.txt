@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+project(bootflags_api)
+
+set(bootflags_api_source_files
+  api_bootflags.cpp
+)
+
+add_library(bootflags_api ${bootflags_api_source_files})
+target_compile_definitions(bootflags_api PUBLIC -DENABLE_API_BOOTFLAGS)
