@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include "config.h"
+
 #ifdef ENABLE_API_BOOTFLAGS
     #include "bootflags_api/api_bootflags.h"
 #endif

@@ -17,9 +17,7 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifdef ENABLE_API_BOOTFLAGS
 #include "api_bootflags.h"
-
 #include <iostream>
 
 using namespace std;
@@ -37,5 +35,3 @@ int API_Bootflags::getFlag(Bootflag f){
     cout << "getting flag " << f << endl;
     return -1;
 }
-
-#endif

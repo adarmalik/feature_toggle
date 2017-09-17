@@ -16,8 +16,6 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-
-#ifdef ENABLE_API_BOOTFLAGS
 #ifndef API_BOOTFLAGS_H
 #define API_BOOTFLAGS_H
 
@@ -40,4 +38,3 @@ public:
 };
 
 #endif // API_BOOTFLAGS_H
-#endif
