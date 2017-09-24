@@ -6,6 +6,11 @@
     #include "bootflags_api/api_bootflags.h"
 #endif
 
+
+/*! \brief Startup function.
+ *
+ *  Called directly after startup.
+ */
 void startup(){
     std::cout << "starting up" << std::endl;
 #ifdef ENABLE_API_BOOTFLAGS
@@ -15,6 +20,10 @@ void startup(){
 #endif
 }
 
+/*! \brief Shutdown function.
+ *
+ *  Called before shutting down.
+ */
 void shutdown(){
     std::cout << "shutting down" << std::endl;
 
@@ -28,6 +37,11 @@ void shutdown(){
 #endif
 }
 
+/*! \brief Main function.
+ *         Global entry point.
+ *
+ *  Detailed description starts here.
+ */
 int main(int argc __attribute__((unused)), char **argv __attribute__((unused))) {
     startup();
     shutdown();
